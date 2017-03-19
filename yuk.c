@@ -335,6 +335,11 @@ int main(int argc, char *argv[]) {
         printf("  -v Version\n");
         printf("  -h Usage\n");
         printf("  -m Disable colors\n");
+        printf("keys:\n");
+        printf("  hjkl  Move cursor\n");
+        printf("  space Select card\n");
+        printf("  m     Move selection\n");
+        printf("  a     Move to foundation\n");
         return 0;
     }
   }
