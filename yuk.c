@@ -290,7 +290,7 @@ void print_card(int y, int x, Card *card, int full) {
   attroff(A_REVERSE);
 }
 
-void print_Cardop(int y, int x, Card *card) {
+void print_card_top(int y, int x, Card *card) {
   print_card(y, x, card, 0);
 }
 
@@ -311,7 +311,7 @@ void print_tableau(int y, int x, Card *bottom) {
     print_tableau(y, x, bottom->next);
   } else {
     if (bottom->next) {
-      print_Cardop(y, x, bottom);
+      print_card_top(y, x, bottom);
       print_tableau(y + 1, x, bottom->next);
     } else {
       print_card_full(y, x, bottom);
